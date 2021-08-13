@@ -13,16 +13,110 @@ body {
   font-family: "Raleway", sans-serif;
   margin: 0;
   background: #c31432; 
-  background: linear-gradient(to right,#240b36,#c31432) 
+  background: linear-gradient(to right,#240b36,#c31432);
+  min-height: 100vh;
 }
 
 /* Container Style */
 .container {
   width: 80%;
   margin: auto;
+  background-color: linear-gradient(to right,#240b36,#c31432);
+  border-radius: 5px;
+  overflow: auto;
 }
 
 /* Image Style */
 img {
   max-width: 100%;
+}
+
+/* Header style */
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Input Style */
+header input {
+  padding: 0.5rem 1rem;
+  width: 50%;
+  border-radius: 20px;
+  border: none;
+  background-color: #eee;
+}
+
+/* Button style */
+
+header button {
+  background-color: transparent;
+  border: none;
+  font-size: large;
+  margin-left: 10px;
+}
+
+/* Favorite Container */
+
+.fav-container {
+  padding: 1rem;
+  text-align: center;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 2rem; 
+}
+
+.fav-meals {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-evenly;
+}
+/* 
+.fav-meals li {
+
+} */
+
+.fav-meals li img {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.fav-meals li span {
+  display: block;
+  color: #ffffff;
+}
+
+/* Meals Container Style */
+.meal {
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+.meal span {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.meal-header {
+
+}
+
+.meal-header img {
+  width: 100%;
+  margin: auto;
+  max-height: 70vh;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.meal-body {
+
 }
