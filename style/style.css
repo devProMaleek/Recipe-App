@@ -46,8 +46,13 @@ header input {
   border-radius: 20px;
   border: none;
   background-color: #eee;
+  font-family: inherit;
 }
 
+header input:focus {
+  border: none;
+  outline: none;
+}
 /* Button style */
 
 header button {
@@ -55,6 +60,7 @@ header button {
   border: none;
   font-size: large;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 /* Favorite Container */
@@ -118,5 +124,26 @@ h3 {
 }
 
 .meal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
 
+.meal-body h4 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.meal-body .fav-btn{
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: rgb(197, 188, 188);
+  cursor: pointer;
+}
+
+.meal-body .fav-btn.active {
+  color: gold;
 }
