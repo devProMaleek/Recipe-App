@@ -81,10 +81,25 @@ h3 {
   padding: 0;
   justify-content: space-evenly;
 }
-/* 
-.fav-meals li {
 
-} */
+.fav-meals li {
+  position: relative;
+}
+
+.fav-meals li .clear {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  font-size: 1rem;  
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.fav-meals li:hover .clear {
+  opacity: 1;
+}
 
 .fav-meals li img {
   border: 2px solid #ffffff;
@@ -95,8 +110,12 @@ h3 {
 }
 
 .fav-meals li span {
-  display: block;
+  display: inline-block;
   color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 150px;
 }
 
 /* Meals Container Style */
