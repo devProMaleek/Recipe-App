@@ -80,8 +80,12 @@ h3 {
   list-style-type: none;
   padding: 0;
   justify-content: space-evenly;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
-
+.fav-meals::-webkit-scrollbar {
+  display: none;
+}
 .fav-meals li {
   position: relative;
 }
